@@ -1,0 +1,41 @@
+{
+  "name": "gulp-concat-filenames",
+  "description": "Similar to concat, but creates a file with a list of filenames,not file contents.",
+  "version": "2.4.1",
+  "homepage": "http://jesseharlin.net",
+  "repository": "git://github.com/wearefractal/gulp-concat.git",
+  "author": "the-simian <harlinjesse@gmail.com>",
+  "main": "./index.js",
+  "keywords": [
+    "gulpplugin",
+    "concat filenames",
+    "gulp"
+  ],
+  "dependencies": {
+    "gulp-util": "2.x.x",
+    "through": "2.x.x"
+  },
+  "devDependencies": {
+    "gulp": "3.x.x",
+    "gulp-sourcemaps": "1.x.x",
+    "istanbul": "*",
+    "mocha": "*",
+    "mocha-lcov-reporter": "*",
+    "should": "*",
+    "stream-array": "0.x.x",
+    "stream-assert": "2.x.x"
+  },
+  "scripts": {
+
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": ""
+    }
+  ]
+}
