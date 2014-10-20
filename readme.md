@@ -9,6 +9,8 @@
 
 ## Usage
 
+
+### Basic Usage, No options.
 ```js
 var concatFilenames = require('gulp-concat-filenames');
 

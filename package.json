@@ -16,17 +16,23 @@
     "through": "2.x.x"
   },
   "devDependencies": {
+    "chai": "*",
     "gulp": "3.x.x",
+    "gulp-istanbul": "^0.3.1",
+    "gulp-mocha": "^1.1.1",
+    "gulp-plato": "^1.0.1",
     "gulp-sourcemaps": "1.x.x",
     "istanbul": "*",
     "mocha": "*",
     "mocha-lcov-reporter": "*",
-    "should": "*",
+    "run-sequence": "^1.0.1",
+    "sinon-chai": "*",
     "stream-array": "0.x.x",
     "stream-assert": "2.x.x"
   },
   "scripts": {
-
+    "test": "gulp test",
+    "ci" : "gulp ci"  
   },
   "engineStrict": true,
   "engines": {
