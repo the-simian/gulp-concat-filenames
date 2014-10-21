@@ -1,3 +1,6 @@
+[![Coverage Status](https://img.shields.io/coveralls/the-simian/gulp-concat-filenames.svg)](https://coveralls.io/r/the-simian/gulp-concat-filenames)
+
+
 
 # Information
 

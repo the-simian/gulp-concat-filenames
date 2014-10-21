@@ -27,7 +27,6 @@ describe('Given gulp-concat-filenames', function () {
                 .to
                 .throw(Error, 'Missing fileName option for gulp-concat-filenames');
         });
-
     });
 
     describe('When I do provide a filename', function () {
@@ -150,13 +149,7 @@ describe('Given gulp-concat-filenames', function () {
                         }))
                         .pipe(assert.end(done));
                 });
-
-
             });
-
         });
-
-
-
     });
 });
