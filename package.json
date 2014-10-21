@@ -31,8 +31,7 @@
     "stream-assert": "2.x.x"
   },
   "scripts": {
-    "test": "gulp test",
-    "ci" : "gulp ci"  
+    "test": "gulp ci" 
   },
   "engineStrict": true,
   "engines": {
