@@ -1,13 +1,14 @@
 {
   "name": "gulp-concat-filenames",
   "description": "Similar to concat, but creates a file with a list of filenames,not file contents.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://jesseharlin.net",
   "repository": "https://github.com/the-simian/gulp-concat-filenames",
   "author": "the-simian <harlinjesse@gmail.com>",
   "main": "./index.js",
   "keywords": [
     "gulpplugin",
+    "gulpfriendly",  
     "concat filenames",
     "gulp"
   ],
