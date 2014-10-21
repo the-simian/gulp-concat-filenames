@@ -1,4 +1,7 @@
+[![Build Status](https://travis-ci.org/the-simian/gulp-concat-filenames.svg?branch=master)](https://travis-ci.org/the-simian/gulp-concat-filenames)
+
 [![Coverage Status](https://img.shields.io/coveralls/the-simian/gulp-concat-filenames.svg)](https://coveralls.io/r/the-simian/gulp-concat-filenames)
+
 
 
 
