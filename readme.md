@@ -8,6 +8,7 @@
 
 [![Dependency Status](https://david-dm.org/the-simian/gulp-concat-filenames.svg)](https://david-dm.org/the-simian/gulp-concat-filenames)
 
+[![Reference Status](https://www.versioneye.com/nodejs/gulp-concat-filenames/reference_badge.svg?style=flat)](https://www.versioneye.com/nodejs/gulp-concat-filenames/references)
 
 # Information
 
