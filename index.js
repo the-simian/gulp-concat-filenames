@@ -7,13 +7,18 @@ var PluginError = gutil.PluginError;
 function concatFilenames(filename, opts) {
     'use strict';
 
+    var identity = function(x) {
+        return x;
+    };
+
     var error = {
         noFilename: 'Missing fileName option for gulp-concat-filenames',
         noStreaming: 'Streaming not supported'
     };
 
     opts = opts || {};
-    
+    opts.template = opts.template || identity;
+
     if (!filename) {
         throw new PluginError('gulp-concat-filenames', error.noFilename);
     }
@@ -46,7 +51,7 @@ function concatFilenames(filename, opts) {
 
         var thisRequire = [
                     opts.prepend || '',
-                    requirePath.replace(/\\/g, '\/'),
+                    opts.template(requirePath.replace(/\\/g, '\/')),
                     opts.append || '',
                     opts.newLine
                 ].join('');
