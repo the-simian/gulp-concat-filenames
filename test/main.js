@@ -187,7 +187,9 @@ describe('Given gulp-concat-filenames', function () {
                         .pipe(concatFilenames('mainfest.txt', {
                             root: 'fixtures',
                             template: function(filename) {
-                                y = 0;
+                                /* jshint ignore:start */
+                                y = 0; // deliberate syntax error
+                                /* jshint ignore:end */
                                 return filename;
                             }
                         }))
@@ -205,7 +207,7 @@ describe('Given gulp-concat-filenames', function () {
                         .src(fixtures('*'))
                         .pipe(concatFilenames('mainfest.txt', {
                             root: 'fixtures',
-                            template: function(filename) {
+                            template: function() {
                                 return 5;
                             }
                         }))
