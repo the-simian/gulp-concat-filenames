@@ -178,6 +178,43 @@ describe('Given gulp-concat-filenames', function () {
                         .pipe(assert.end(done));
                 });
             });
+
+            describe('When I provide a formatting function with a syntax error', function () {
+
+                it('then it will fail and throw an error', function (done) {
+                    gulp
+                        .src(fixtures('*'))
+                        .pipe(concatFilenames('mainfest.txt', {
+                            root: 'fixtures',
+                            template: function(filename) {
+                                y = 0;
+                                return filename;
+                            }
+                        }))
+                        .on('error', function (err) {
+                            expect(err.message).to.have.string('Error in template function');
+                            done();
+                        });
+                });
+            });
+
+            describe('When I provide a formatting function that does not return a string', function () {
+
+                it('then it will fail and throw an error', function (done) {
+                    gulp
+                        .src(fixtures('*'))
+                        .pipe(concatFilenames('mainfest.txt', {
+                            root: 'fixtures',
+                            template: function(filename) {
+                                return 5;
+                            }
+                        }))
+                        .on('error', function (err) {
+                            expect(err.message).to.equal('Error in template function');
+                            done();
+                        });
+                });
+            });
         });
     });
 });
