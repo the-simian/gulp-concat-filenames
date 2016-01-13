@@ -12,10 +12,15 @@
 
 # Information
 
+|              |                                                                                                      |
 |--------------|------------------------------------------------------------------------------------------------------|
 | Package      | gulp-concat-filenames                                                                                |
 | Description  | Similar to concat, but creates a list of names in the output file, rather than contents being merged.|
 | Node Version | >= 0.10                                                                                              |
+
+
+![gulp-concat-filenames](https://cloud.githubusercontent.com/assets/954596/12309992/609d63da-ba13-11e5-8698-b06ea035f07b.png)
+
 
 ## Usage
 
@@ -134,3 +139,6 @@ XXX--ONE.TXT--YYY
 XXX--TWO.TXT--YYY
 
 ```
+
+###Contribution
+If you write tests, follow semver and have something to add, I love accepting pull requests!! Any questions? Make an issue on github! <3
