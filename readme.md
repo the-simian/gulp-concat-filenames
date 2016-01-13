@@ -59,6 +59,8 @@ The second argument is optional, and is an object with the following properties:
 
 - `append` - Some text to append to every intry in the list of filenames
 
+- `template` - a function that takes one parameter (the file name) and returns the string after some formatting. Can be used in addition to, or instead of, `append` and `prepend`
+
 - `root` - the root folder. Including this argument will return a list of relative paths instead of absolute paths.
 
 

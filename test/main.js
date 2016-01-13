@@ -150,6 +150,73 @@ describe('Given gulp-concat-filenames', function () {
                         .pipe(assert.end(done));
                 });
             });
+
+            describe('When I provide a formatting function', function () {
+
+                it('then it will apply that function to each entry', function (done) {
+                    var expectedFilenames = ([
+                        'XXX../test/fixtures/fork.txtYYY',
+                        'XXX../test/fixtures/knife.jsYYY',
+                        'XXX../test/fixtures/spoon.htmlYYY',
+                    ].join('\n') + '\n').toString().toUpperCase();
+
+                    gulp
+                        .src(fixtures('*'))
+                        .pipe(concatFilenames('mainfest.txt', {
+                            root: 'fixtures',
+                            template: function(filename) {
+                                return 'XXX' + filename.toUpperCase() + 'YYY';
+                            }
+                        }))
+                        .pipe(assert.first(function (d) {
+
+                            var contents = d.contents.toString();
+                            expect(contents)
+                                .to
+                                .equal(expectedFilenames);
+                        }))
+                        .pipe(assert.end(done));
+                });
+            });
+
+            describe('When I provide a formatting function with a syntax error', function () {
+
+                it('then it will fail and throw an error', function (done) {
+                    gulp
+                        .src(fixtures('*'))
+                        .pipe(concatFilenames('mainfest.txt', {
+                            root: 'fixtures',
+                            template: function(filename) {
+                                /* jshint ignore:start */
+                                y = 0; // deliberate syntax error
+                                /* jshint ignore:end */
+                                return filename;
+                            }
+                        }))
+                        .on('error', function (err) {
+                            expect(err.message).to.have.string('Error in template function');
+                            done();
+                        });
+                });
+            });
+
+            describe('When I provide a formatting function that does not return a string', function () {
+
+                it('then it will fail and throw an error', function (done) {
+                    gulp
+                        .src(fixtures('*'))
+                        .pipe(concatFilenames('mainfest.txt', {
+                            root: 'fixtures',
+                            template: function() {
+                                return 5;
+                            }
+                        }))
+                        .on('error', function (err) {
+                            expect(err.message).to.equal('Error in template function');
+                            done();
+                        });
+                });
+            });
         });
     });
 });
