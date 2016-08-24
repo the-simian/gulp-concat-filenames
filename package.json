@@ -11,6 +11,9 @@
   }, {
       "name" : "Noam Youngerman",
       "email" : "noam@younger.mn"
+  }, {
+      "name" : "Rainfore Zhao",
+      "email" : "rainforest92@126.com"
   }],
   "main": "./index.js",
   "keywords": [

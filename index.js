@@ -13,7 +13,6 @@ function concatFilenames(filename, opts) {
 
     var error = {
         noFilename: 'Missing fileName option for gulp-concat-filenames',
-        noStreaming: 'Streaming not supported',
         badTemplate: 'Error in template function'
     };
 
@@ -32,15 +31,6 @@ function concatFilenames(filename, opts) {
         firstfile;
 
     function bufferContents(file) {
-        if (file.isNull()) {
-            return;
-        }
-
-        if (file.isStream()) {
-            var errorNoStream = new PluginError('gulp-concat-filenames', error.noStreaming);
-            return this.emit('error', errorNoStream);
-        }
-
         firstfile = firstfile || file;
 
         var requirePath = path.resolve(file.path);
