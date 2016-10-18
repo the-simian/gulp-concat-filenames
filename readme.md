@@ -4,7 +4,7 @@
 
 [![Code Climate](https://codeclimate.com/github/the-simian/gulp-concat-filenames/badges/gpa.svg)](https://codeclimate.com/github/the-simian/gulp-concat-filenames)
 
-[![Codeship Status for the-simian/gulp-concat-filenames](https://www.codeship.io/projects/b7aaf400-3b02-0132-083a-261a2707f8ca/status)](https://www.codeship.io/projects/42521)
+[![Codeship Status for the-simian/gulp-concat-filenames](https://app.codeship.com/projects/b7aaf400-3b02-0132-083a-261a2707f8ca/status?branch=master)](https://app.codeship.com/projects/42521)
 
 [![Dependency Status](https://david-dm.org/the-simian/gulp-concat-filenames.svg)](https://david-dm.org/the-simian/gulp-concat-filenames)
 
