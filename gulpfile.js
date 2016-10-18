@@ -11,7 +11,7 @@ function test(cb) {
     gulp
         .src(['index.js'])
         .pipe(istanbul())
-        .on('finish', function () {
+        .on('finish', function() {
             gulp
                 .src(['test/main.js'])
                 .pipe(mocha({
@@ -43,7 +43,7 @@ function complexity() {
         .pipe(plato('plato', platoArgs));
 }
 
-function lcov(){
+function lcov() {
     gulp
         .src('coverage/**/lcov.info')
         .pipe(coveralls());

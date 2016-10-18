@@ -7,9 +7,9 @@ var PluginError = gutil.PluginError;
 function concatFilenames(filename, opts) {
     'use strict';
 
-    var identity = function(x) {
+    function identity(x) {
         return x;
-    };
+    }
 
     var error = {
         noFilename: 'Missing fileName option for gulp-concat-filenames',
@@ -56,11 +56,11 @@ function concatFilenames(filename, opts) {
             requirePath;
 
         var thisRequire = [
-                    opts.prepend || '',
-                    safeTemplate.call(this, requirePath.replace(/\\/g, '\/')),
-                    opts.append || '',
-                    opts.newLine
-                ].join('');
+            opts.prepend || '',
+            safeTemplate.call(this, requirePath.replace(/\\/g, '\/')),
+            opts.append || '',
+            opts.newLine
+        ].join('');
 
         buffer.push(new Buffer(thisRequire));
     }
