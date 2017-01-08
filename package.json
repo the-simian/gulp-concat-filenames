@@ -34,7 +34,7 @@
     "gulp-istanbul": "^1.1.1",
     "gulp-mocha": "^3.0.1",
     "gulp-plato": "^1.0.2",
-    "gulp-sourcemaps": "2.x.x",
+    "gulp-sourcemaps": "^2.2.2",
     "istanbul": "*",
     "mocha": "*",
     "mocha-lcov-reporter": "*",
