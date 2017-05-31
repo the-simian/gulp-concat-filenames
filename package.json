@@ -28,7 +28,7 @@
   },
   "typings": "index.d.ts",
   "devDependencies": {
-    "chai": "*",
+    "chai": ">=4.0.1",
     "gulp": "3.x.x",
     "gulp-coveralls": "^0.1.3",
     "gulp-istanbul": "^1.1.1",
