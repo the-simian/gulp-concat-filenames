@@ -38,7 +38,7 @@
     "istanbul": "*",
     "mocha": "*",
     "mocha-lcov-reporter": "*",
-    "run-sequence": "^1.0.2",
+    "run-sequence": "^2.0.0",
     "sinon-chai": "*",
     "stream-array": "1.x.x",
     "stream-assert": "2.x.x"
