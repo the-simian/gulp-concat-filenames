@@ -41,7 +41,7 @@
     "run-sequence": "^2.0.0",
     "sinon-chai": "*",
     "stream-array": "1.x.x",
-    "stream-assert": "2.x.x"
+    "stream-assert": "2.0.2"
   },
   "scripts": {
     "test": "gulp ci",
