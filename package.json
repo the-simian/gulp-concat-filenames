@@ -29,7 +29,7 @@
   "typings": "index.d.ts",
   "devDependencies": {
     "chai": "*",
-    "gulp": "3.x.x",
+    "gulp": "^4.0.2",
     "gulp-coveralls": "^0.1.3",
     "gulp-istanbul": "^1.1.1",
     "gulp-mocha": "^5.0.0",
