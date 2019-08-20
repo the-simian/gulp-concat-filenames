@@ -32,7 +32,7 @@
     "gulp": "3.x.x",
     "gulp-coveralls": "^0.1.3",
     "gulp-istanbul": "^1.1.1",
-    "gulp-mocha": "^5.0.0",
+    "gulp-mocha": "^7.0.1",
     "gulp-plato": "^1.0.2",
     "gulp-sourcemaps": "2.x.x",
     "istanbul": "*",
