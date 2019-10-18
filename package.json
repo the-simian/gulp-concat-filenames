@@ -36,7 +36,7 @@
     "gulp-plato": "^1.0.2",
     "gulp-sourcemaps": "2.x.x",
     "istanbul": "*",
-    "mocha": "*",
+    "mocha": ">=6.2.2",
     "mocha-lcov-reporter": "*",
     "run-sequence": "^2.0.0",
     "sinon-chai": "*",
