@@ -39,7 +39,7 @@
     "mocha": "*",
     "mocha-lcov-reporter": "*",
     "run-sequence": "^2.0.0",
-    "sinon-chai": "*",
+    "sinon-chai": "3.3.0",
     "stream-array": "1.x.x",
     "stream-assert": "2.x.x"
   },
