@@ -4,7 +4,6 @@ var gulp = require('gulp');
 var istanbul = require('gulp-istanbul');
 var mocha = require('gulp-mocha');
 var plato = require('gulp-plato');
-var runSequence = require('run-sequence');
 var coveralls = require('gulp-coveralls');
 
 function test(cb) {
