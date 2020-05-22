@@ -4,7 +4,6 @@ var gulp = require('gulp');
 var istanbul = require('gulp-istanbul');
 var mocha = require('gulp-mocha');
 var plato = require('gulp-plato');
-var runSequence = require('run-sequence');
 var coveralls = require('gulp-coveralls');
 
 function test(cb) {
@@ -51,12 +50,11 @@ function lcov() {
 
 
 function ci(cb) {
-    runSequence('test', 'complexity', cb);
+    gulp.series('test', 'complexity', cb);
 }
 
 
-gulp
-    .task('test', test)
-    .task('complexity', complexity)
-    .task('coveralls', lcov)
-    .task('ci', ci);
+gulp.task('test', test);
+gulp.task('complexity', complexity);
+gulp.task('coveralls', lcov);
+gulp.task('ci', ci);
