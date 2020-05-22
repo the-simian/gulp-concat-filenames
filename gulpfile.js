@@ -55,8 +55,7 @@ function ci(cb) {
 }
 
 
-gulp
-    .task('test', test)
-    .task('complexity', complexity)
-    .task('coveralls', lcov)
-    .task('ci', ci);
+gulp.task('test', test);
+gulp.task('complexity', complexity);
+gulp.task('coveralls', lcov);
+gulp.task('ci', ci);
