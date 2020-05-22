@@ -51,7 +51,7 @@ function lcov() {
 
 
 function ci(cb) {
-    runSequence('test', 'complexity', cb);
+    gulp.series('test', 'complexity', cb);
 }
 
 
